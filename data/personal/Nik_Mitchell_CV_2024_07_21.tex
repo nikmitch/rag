@@ -1,0 +1,377 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+  {\setlength{\leftmargin}{#1}}%
+  \item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+  {\setlength{\leftmargin}{-0.5#1}}%
+  \item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+  #1 &
+  #2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Nik Mitchell}}
+
+123B Glenmore Street\ \ \textbullet
+\ \ Wellington, New Zealand 6012
+\\
+(+64)21 0222 9633\ \ \textbullet
+\ \ nik.mitchell2@gmail.com
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+
+%\subsection*{Skills}
+%\begin{itemize}
+%	\item Communication of technical concepts to a broad audience
+%	\item Ablility to adapt to new challenges and changing circumstances
+%	\item Ablility to work collaboratively as well as independently 
+%	\item Very strong computer skills
+%	\item Research skills
+%	\item Efficient time management and prioritisation
+%\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+
+\subsection*{Experience}
+
+\begin{itemize}
+  \parskip=0.1em
+  
+    \item
+  %  \headerrow
+  {\textbf{NZ Royal Commission Inquiry - COVID-19 Lessons Learned}}
+  %  {\textbf{Wellington, NZ}}
+  \\
+  \headerrow
+  {\emph{Principal Data Analyst}}
+  {\emph{May 2024 -- July 2024}}
+  {\emph{Created high-quality visualisations to support the Inquiry}}
+  \begin{itemize*}
+  	\item Created visualisations that contextualised pandemic trends (COVID-19 cases, hospitalisations, deaths and vaccinations) in New Zealand against policy decisions (e.g. lockdowns, border closing) and pandemic trends in other countries
+  	\item Also conducted analyses and created visualisations to highlight the disparate impact of COVID-19 on M\a=aori and Pacific ethnic groups and people living in areas of higher socioeconomic deprivation
+  	\item Worked closely with the Chair of the Commission to discuss how to tell the story of the COVID pandemic through the above visualisations in a way that draws out lessons for future pandemics
+  	
+  	
+  \end{itemize*}
+  
+  
+  \item
+%  \headerrow
+  {\textbf{COVID-19 Analytics, Ministry of Health/Health New Zealand}}
+%  {\textbf{Wellington, NZ}}
+  \\
+  \headerrow
+  {\emph{Team Lead}}
+  {\emph{July 2022 -- October 2023}}
+  {\emph{Managed team responsible for NZ's COVID data (cases, hospitalisations, deaths etc)}}
+  \begin{itemize*}
+  	\item Balanced high volumes of short-timeline requests against long-term projects in our work plan
+  	\item Coordinated between analysts, management and other teams to establish clear expectations for deliverables
+  	\item Incorporated Contact Tracing and Antivirals work streams into our business-as-usual responsibilities
+ 	\item Hired and trained new staff  	
+  	\item Coordinated Intelligence stakeholders to produce daily National Situation Report for Measles outbreak
+  
+  \end{itemize*}
+  
+%  
+%\item
+%%\headerrow
+%{\textbf{COVID-19 Analytics, Ministry of Health}}
+%%{\textbf{COVID-19 Intelligence \& Surveillance, Ministry of Health}}
+%%{\textbf{Wellington, NZ}}
+%\\
+\headerrow
+{\emph{Senior Data Analyst}}
+{\emph{September 2021 -- July 2022}}
+{\emph{Continuing from previous role, but with additional responsibilities}}
+%{\emph{Designing, conducting, visualising and automating analysis and reports related to COVID-19 in NZ (using R, SQL and Excel).}}
+\begin{itemize*}
+ 	%	\item Interfacing with team members and other teams to coordinate timely and accurate information flow and set expectations.
+
+	\item Automated weekly creation of visualisations for group's flagship report% as well as designing our team's standard plotting themes and pallettes for visualisations.
+	\item Liased with external research groups about modelling, data requirements and data quality
+	\item Collaborated with technical experts (e.g. epidemiologists) to design and refine analyses.
+	\item  Created more efficient and robust data pipelines % with the targets R package,
+   \item Trained and supported new team members.
+\end{itemize*}
+
+
+\headerrow
+{\emph{Research \& Data Analyst}}
+{\emph{July 2020 -- September 2021}}
+{\emph{Designed, conducted, visualised and automated analysis and reports related to COVID-19 in NZ}}
+%{\emph{Designing, conducting, visualising and automating analysis and reports related to COVID-19 in NZ (using R, SQL and Excel).}}
+\begin{itemize*}
+	\item Provided data for public, media organisations, parliament and internal stakeholders on tight timelines in emergency response conditions
+	\item Communicated, resolved and prevented data issues in newly developed and constantly evolving systems
+	%	\item Interfacing with team members and other teams to coordinate timely and accurate information flow and set expectations.
+	\item Automated reporting processes
+	\begin{itemize*}
+		\item Replaced Excel-based workflows with scripted workflows in R 
+		\item Automated table and graph production into Word document reports using R Markdown
+		\item  Set up automatic emails for distribution of regular reporting
+	\end{itemize*}
+	%   \item Training and supporting new team members.
+\end{itemize*}
+
+
+
+\item
+%\headerrow
+{\textbf{Open Philanthropy Project, San Francisco (remote)}}
+%{\textbf{Wellington, NZ}}
+\\
+\headerrow
+{\emph{Conversation Notes Contracting}}
+{\emph{February 2020 -- April 2020}}
+\begin{itemize*}
+	%	\item The Open Philanthropy Project is a charitable organisation that does research and grantmaking. It aims to indentify problems for which the greatest benefit can be produc ed with a given amount of money.
+	\item Created and reorganised summaries of audio conversations between Open Philanthropy staff and scientific experts in AI and neuroscience
+	\item The conversations were on the topic of how to estimate the computational capacity of the human brain (as an input to estimated timelines for progress in AI)
+
+\end{itemize*}
+
+
+%
+%\item
+%\headerrow
+%{\textbf{Medical School, University of Otago, Wellington}}
+%{\textbf{Wellington, NZ}}
+%\headerrow
+%{\emph{Receptionist}}
+%{\emph{Jan 2020 -- Feb 2020}}
+%\begin{itemize*}
+%	\item Developed customer service mindset, engaging with students, academics and administrators.
+%	\item Learned to manage and constantly reprioritise large numbers of parallel tasks to meet deadlines.
+%\end{itemize*}
+%
+%
+%\headerrow
+%{\emph{IT Support Assistant}}
+%{\emph{Nov 2019 -- Jan 2020}}
+%\begin{itemize*}
+%	\item Helping staff members with technical issues, upgrading software and hardware, securing medically sensitive data.
+%\end{itemize*}
+%
+%
+%\headerrow
+%{\emph{Pathology Department Administrator}}
+%{\emph{Sep 2019 -- Nov 2019}}
+%\begin{itemize*}
+%	   	\item General administrative tasks for the department plus acting as a personal assistant to HoD.
+%	\item Gained experience working in supportive roles within teams and organising events collaboratively.
+%	\item Tasks included scheduling, reimbursements, travel arrangements, spreadsheet design and maintenance
+%
+%\end{itemize*}
+
+%
+%\item
+%%\headerrow
+%{\textbf{Medical School, University of Otago, Wellington}}
+%%{\textbf{Wellington, NZ}}
+%\\
+%\headerrow
+%{\emph{Receptionist}}
+%{\emph{Jan 2020 -- Feb 2020}}
+%\begin{itemize*}
+%%	\item Developed customer service mindset, engaging with students, academics and administrators.
+%	\item Learned to manage and constantly reprioritise large numbers of parallel tasks to meet deadlines.
+%\end{itemize*}
+%
+%
+%\headerrow
+%{\emph{IT Support Assistant}}
+%{\emph{Nov 2019 -- Jan 2020}}
+%%\begin{itemize*}
+%%	\item Assisted staff members with technical issues, upgrading software and hardware, securing medically sensitive data.
+%%\end{itemize*}
+%
+%
+%\headerrow
+%{\emph{Pathology Department Administrator and Assistant to Head of Department}}
+%{\emph{Sep 2019 -- Nov 2019}}
+%\begin{itemize*}
+%%	   	\item General administrative tasks for the department and acting as a personal assistant to head of department.
+%%	\item Gained experience working in supportive roles within teams and organising events collaboratively.
+%	\item Tasks included inbox management, scheduling,  reimbursements, travel bookings and spreadsheet design
+%
+%\end{itemize*}
+
+
+
+%  \item
+%  \headerrow
+%    {\textbf{University of Otago}}
+%    {\textbf{Dunedin, NZ}}
+%  \headerrow
+%    {\emph{Demonstrator for PHSI191}}
+%    {\emph{First Semester 2018}}
+%  \begin{itemize*}
+%    \item Helped undergraduates to develop the skills needed to gain a better understanding of the physical world.
+%  \end{itemize*}
+%  \headerrow
+%    {\emph{Summer Studentships}}
+%    {\emph{2016 \& 2017}}
+%  \begin{itemize*}
+%    \item Undertook $10$ week research projects for my supervisor to investigate questions of interest
+%          and develop relevant skills for postgraduate study. 
+%  \end{itemize*}
+
+%  \item
+%  \headerrow
+%    {\textbf{Education Perfect}}
+%    {\textbf{Dunedin, NZ}}
+%  \\
+%  \headerrow
+%    {\emph{Senior Mathematics Content Generator}}
+%    {\emph{Nov 2013 -- Feb 2015}}
+%  \begin{itemize*}
+%    \item Devised online learning resources for high school mathematics students in NZ.
+%    \item Improved my ability to communicate technical concepts to a wider audience.
+%    \item In charge of training and managing several other Content Generators for a couple of months 
+%          towards the end of my time on the job. This included setting up collaborative spreadsheets online
+%         for planning and allocating tasks as well as monitoring progress.
+%   \end{itemize*}       
+%
+
+\end{itemize}
+
+
+\hrule
+
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+	
+	\item 
+%	\headerrow
+	{\textbf{University of Otago}}
+%	{\textbf{Dunedin, NZ}}
+	
+	
+	\headerrow
+	{\emph{Masters of Physics (achieved with Distinction), Quantum Fluid Dynamics}}
+	{\emph{March 2018 -- March 2019}}
+%	\begin{itemize*}
+%		% \item Wrote academic paper in the months following this, currently awaiting acceptance to a journal. 
+%		\item Strengthened technical writing skills, programming skills and ability to work independently on long-term projects.
+%	\end{itemize*}
+	
+	\headerrow
+	{\emph{BSc. Physics (First Class Honours), Minor in Mathematics}}
+	{\emph{2014 -- 2017}}
+%	\begin{itemize*}
+%		\item Developed strong mathematical foundations, understanding of physical systems and problem solving skills.
+%	\end{itemize*}
+	
+	
+%	\headerrow
+%	{\emph{Health Sciences First Year}}
+%	{\emph{2013}}
+%	\begin{itemize*}
+%		\item Developing a broad scientific knowledge base, including epidemiology, physics, microbiology and chemistry.
+%		\item GPA of 7.6, subsequently went straight into second year physics without having taken physics in high school.
+%	\end{itemize*}
+		
+\end{itemize}
+
+
+%
+%
+%\hrule
+%\vspace{-0.4em}
+%\subsection*{Core Technical Skills}
+%
+%\begin{indentsection}{\parindent}
+%\hyphenpenalty=1000
+%\begin{description*}
+%  \item[Programming:]
+%  R, \ SQL, Git,\ Python,\ Excel,\  \CPP, \  \LaTeX , Vim\\
+%  \item[Mathematics:]
+%  Multivariable \& Vector Calculus, Linear Algebra, Real and Complex Analysis, Fourier Transforms
+%\end{description*}
+%\vspace{-0.4em}
+%
+%\end{indentsection}
+%
+%
+%\hrule
+%\subsection*{Achievements \& Interests}
+
+%\begin{itemize*}
+%  \parskip=0.1em
+
+%  \item
+%  \headerrow
+%    {\textbf{Bridge}}
+%    {\textbf{}}
+%  \\
+%  \headerrow
+%    {\emph{NZ Youth Bridge Representative}}
+%    {\emph{2016 -- 2018}}
+%  \begin{itemize*}
+%    \item I played bridge for several years and was selected to %be part of the New Zealand
+%          Youth Bridge Team. 
+%    \item This gave me the opportunity to travel to Australia %multiple times to take part in competitions,
+%          and also attend the World Youth Bridge Championships %in Wujiang, China in August 2018.
+%    \item Bridge is a game that requires sound judgement and %problem solving skills as well as interpersonal
+%          skills to build and maintain a stable partnership.
+%  \end{itemize*}
+
+%  \item
+%  \headerrow
+%    {\textbf{Other Interests}}
+%    {\textbf{}}
+%  \\
+%  \headerrow
+%    {\emph{Things I enjoy doing and learning about in my spare time}}
+%    {\emph{}}
+%  \begin{itemize*}
+%    \item Partner dancing (Modern Jive, West Coast Swing)
+%    \item Statistics, Philosophy, Psychology, Economics
+         
+%  \end{itemize*}
+
+%\end{itemize*}
+
+
+\end{document}
+%\grid

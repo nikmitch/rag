@@ -1,9 +1,0 @@
-Experience
-
-NZ Royal Commission Inquiry - COVID-19 Lessons Learned (Wellington, NZ)
-
-Principal Data Analyst (May 2024 -- July 2024)
-- Created high-quality visualisations to support the Inquiry
-  - Created visualisations that contextualised pandemic trends (COVID-19 cases, hospitalisations, deaths and vaccinations) in New Zealand against policy decisions (e.g. lockdowns, border closing) and pandemic trends in other countries
-  - Also conducted analyses and created visualisations to highlight the disparate impact of COVID-19 on M\a=aori and Pacific ethnic groups and people living in areas of higher socioeconomic deprivation
-  - Worked closely with the Chair of the Commission to discuss how to tell the story of the COVID pandemic through the above visualisations in a way that draws out lessons for future pandemics
